@@ -20,5 +20,6 @@ DATABASE_PATH = os.getenv('DATABASE_PATH', os.path.join(PROJECT_ROOT, 'dmail.db'
 # if no previous timestamp is stored.
 LOOKBACK_DAYS = int(os.getenv('LOOKBACK_DAYS', '1'))
 
-# OpenAI API Key
+# OpenAI API Config
 OPENAI_API_KEY = credentials.OPENAI_API_KEY
+OPENAI_API_BASE = credentials.OPENAI_API_BASE

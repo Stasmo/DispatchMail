@@ -118,7 +118,7 @@ DEFAULT_TOOLS = [
 class Agent:
     def __init__(self, client_type):
         if client_type == "openai":
-            self.client = OpenAI(api_key=OPENAI_API_KEY)
+            self.client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE)
         else:
             raise ValueError(f"Invalid client type: {client_type}")
         
